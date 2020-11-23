@@ -1,6 +1,6 @@
 package com.etude.personne;
 
-public class Etudiant extends Personne implements Comparable<Etudiant> {
+public class Etudiant extends Personne {
 	private int cne;
 
 	public Etudiant(String pPrenom, String pNom, int pCne) {
@@ -8,14 +8,15 @@ public class Etudiant extends Personne implements Comparable<Etudiant> {
 		this.cne = pCne;
 	}
 
-	@Override
-	public int compareTo(Etudiant e) {
-		int compare;
-		String prenom1 = (this.prenom);
-		String prenom2 = (e.prenom);
-		compare = prenom1.compareTo(prenom2);
-		return compare;
-	}
+//	@Override
+//	public int compareTo(Personne p) {
+//		Etudiant e = (Etudiant) p;
+//		int compare;
+//		String prenom1 = (this.prenom);
+//		String prenom2 = (e.prenom);
+//		compare = prenom1.compareTo(prenom2);
+//		return compare;
+//	}
 
 	@Override
 	public String toString() {
