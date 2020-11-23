@@ -1,6 +1,8 @@
 package com.etude.personne;
 
-public class Employe extends Personne implements Comparable<Employe> {
+import java.util.Comparator;
+
+public class Employe extends Personne implements Comparable<Employe>, Comparator<Employe> {
 
 	protected double salaire;
 
@@ -23,4 +25,12 @@ public class Employe extends Personne implements Comparable<Employe> {
 		return compare;
 	}
 
+	@Override
+	public int compare(Employe o1, Employe o2) {
+		int compare;
+		String prenom1 = (o1.prenom);
+		String prenom2 = (o2.prenom);
+		compare = prenom1.compareTo(prenom2);
+		return compare;
+	}
 }
