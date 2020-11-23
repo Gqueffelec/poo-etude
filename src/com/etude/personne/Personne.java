@@ -4,8 +4,9 @@ public abstract class Personne {
 	protected final String nom;
 	protected final String prenom;
 
-	protected Personne(String pNom, String pPrenom) {
-		this.nom = pNom;
+	protected Personne(String pPrenom, String pNom) {
 		this.prenom = pPrenom;
+		this.nom = pNom;
 	}
+
 }
