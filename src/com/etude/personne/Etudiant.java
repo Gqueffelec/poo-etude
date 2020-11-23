@@ -19,7 +19,7 @@ public class Etudiant extends Personne implements Comparable<Etudiant> {
 
 	@Override
 	public String toString() {
-		return "Je suis l'étudiant " + prenom + " " + nom + " Mon CNE est " + this.cne;
+		return "Je suis l'étudiant " + this.prenom + " " + this.nom + " Mon CNE est " + this.cne;
 	}
 
 }

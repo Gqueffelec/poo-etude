@@ -2,7 +2,7 @@ package com.etude.personne;
 
 public class Employe extends Personne implements Comparable<Employe> {
 
-	private double salaire;
+	protected double salaire;
 
 	public Employe(String pNom, String pPrenom, double pSalaire) {
 		super(pNom, pPrenom);
@@ -11,7 +11,7 @@ public class Employe extends Personne implements Comparable<Employe> {
 
 	@Override
 	public String toString() {
-		return "Je suis l'employé " + prenom + " " + nom + " mon salaire est de : " + salaire + " euro";
+		return "Je suis l'employé " + this.prenom + " " + this.nom + " mon salaire est de : " + this.salaire + " euro";
 	}
 
 	@Override
